@@ -21,4 +21,4 @@ exponent = int(exponent)
 
 # Display math result to user
 
-print(base_value, 'raised to the power of' exponent, 'is', base_value**exponent, '!!')
+print(base_value, 'raised to the power of', exponent, 'is', base_value**exponent, '!!')
