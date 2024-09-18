@@ -5,7 +5,7 @@
 
 
 print('-----Calculating Exponenets-----')
-
+print()
 base_value = int(input('Enter an interger as the base value: '))
 
 # convert base_value to interger
@@ -20,5 +20,33 @@ exponent = int(input('Enter an interger as the exponent: '))
 exponent = int(exponent)
 
 # Display math result to user
+print()
+print()
+print(base_value, 'raised to the power of', exponent, 'is', str(base_value**exponent) + '!!')
 
-print(base_value, 'raised to the power of', exponent, 'is', base_value**exponent, '!!')
+# ADD and subtract
+print()
+print()
+print('-----Addition and Subtraction-----')
+print()
+# Starting integer
+start_value = int(input('Enter a starting integer: '))
+
+# Integer to add
+add_value = int(input('Enter an integer to add: '))
+
+# Integer to subtract
+sub_value = int(input('Enter an integer to subtract: '))
+
+
+# calculate the result
+result = start_value+add_value-sub_value
+
+
+print()
+print()
+print()
+# Full run to get equal
+
+print(start_value, '+', add_value, '-', sub_value, 'is equal to ', result) 
+
