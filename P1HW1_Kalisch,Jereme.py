@@ -3,7 +3,7 @@
 # P1HW1
 # Using Python's you will write a Python program that uses mathematical expressions.
 
-
+print('-------------------------------------')
 print('-----Calculating Exponenets-----')
 print()
 base_value = int(input('Enter an interger as the base value: '))
@@ -45,8 +45,8 @@ result = start_value+add_value-sub_value
 
 print()
 print()
-print()
 # Show results
 
-print(start_value, '+', add_value, '-', sub_value, 'is equal to ', result) 
+print(start_value, '+', add_value, '-', sub_value, 'is equal to ', result)
 
+print('-------------------------------------')
