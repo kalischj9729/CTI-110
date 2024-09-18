@@ -4,7 +4,7 @@
 # Using Python's you will write a Python program that uses mathematical expressions.
 
 
-print('-----Calculating Exponenets-----)
+print('-----Calculating Exponenets-----')
 
 base_value = int(input('Enter an interger as the base value: '))
 
