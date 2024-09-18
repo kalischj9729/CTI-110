@@ -46,7 +46,7 @@ result = start_value+add_value-sub_value
 print()
 print()
 print()
-# Full run to get equal
+# Show results
 
 print(start_value, '+', add_value, '-', sub_value, 'is equal to ', result) 
 
