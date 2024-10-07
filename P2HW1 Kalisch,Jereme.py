@@ -39,20 +39,20 @@ print('| *****************************************************')
 
 # Adjusting the location to ensure proper alignment
 print('|')
-print(f'| Location: {city:>27}')  
-print(f'| Starting Budget:        ${budget:>8.2f}')
+print(f'|{"Location:":<18}{city:<25}')  
+print(f"|{'Budget:':<18}${budget:<25.2f}")
 print('|')
 # List the costs with aligned formatting
-print(f'| Fuel:                   ${fuel:>8.2f}')
-print(f'| Accommodations:         ${hotel:>8.2f}')
-print(f'| Entertainment:          ${expense:>8.2f}')
+print(f'|{"Fuel:":<18}${fuel:<25.2f}')
+print(f'|{"Accommodations:":<18}${hotel:<25.2f}')
+print(f'|{"Entertainment:":<18}${expense:<25.2f}')
 print('|')
 # Finally total balance left
 print('| -----------------------------------------------------')
 print('|')
 result = budget - fuel - hotel - expense
-print(f'| Total Expenses:         ${fuel + hotel + expense:>8.2f}')
-print(f'| Remaining Balance:      ${result:>8.2f}')
+print(f'|{"Total Expenses:":<18}${fuel + hotel + expense:<25.2f}')
+print(f'|{"Balance:":<18}${result:<25.2f}')
 print('| -----------------------------------------------------')
 
 
