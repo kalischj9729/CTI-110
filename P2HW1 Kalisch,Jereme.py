@@ -40,19 +40,33 @@ print('| *****************************************************')
 # Adjusting the location to ensure proper alignment
 print('|')
 print(f'|{"Location:":<18}{city:<25}')  
-print(f"|{'Budget:':<18}${budget:<25.2f}")
+print(f"|{'Budget:':<18}${budget:<25,.2f}")
 print('|')
 # List the costs with aligned formatting
-print(f'|{"Fuel:":<18}${fuel:<25.2f}')
-print(f'|{"Accommodations:":<18}${hotel:<25.2f}')
-print(f'|{"Entertainment:":<18}${expense:<25.2f}')
+print(f'|{"Fuel:":<18}${fuel:<25,.2f}')
+print(f'|{"Accommodations:":<18}${hotel:<25,.2f}')
+print(f'|{"Entertainment:":<18}${expense:<25,.2f}')
 print('|')
 # Finally total balance left
 print('| -----------------------------------------------------')
 print('|')
 result = budget - fuel - hotel - expense
-print(f'|{"Total Expenses:":<18}${fuel + hotel + expense:<25.2f}')
-print(f'|{"Balance:":<18}${result:<25.2f}')
+print(f'|{"Total Expenses:":<18}${fuel + hotel + expense:<25,.2f}')
+print(f'|{"Balance:":<18}${result:<25,.2f}')
 print('| -----------------------------------------------------')
+print('\n\n')
+
+def draw_car():
+    car = r"""
+        ______
+       //  ||\ \
+ _____//___||_\ \___
+ )  _          _    \
+ |_/ \________/ \___|
+___\_/________\_/______
+    """
+    print(car)
+
+draw_car()
 
 
