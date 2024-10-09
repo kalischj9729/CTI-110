@@ -6,23 +6,23 @@ def start_adventure():
     """Starts the adventure game."""
 
     print("Welcome to the Game!")
-    time.sleep(3)
+    time.sleep(2)
     print("You find yourself lost floating in the dark. Upon in horizon you find two paths.")
-    time.sleep(5)
+    time.sleep(3)
     print("You choose either Light or Dark.")
     time.sleep(2)
 
     choice = input("Which way do you choose? (Light/Dark): ").upper()
 
-    if choice == "Light":
-        light_path()
-    elif choice == "Dark":
-        dark_path()
+    if choice == "LIGHT":
+        Light_path()
+    elif choice == "DARK":
+        Dark_path()
     else:
         print("Invalid choice. Please try again.")
         start_adventure()
 
-def light_path():
+def Light_path():
     """Handles the light path in the adventure."""
 
     print("You follow the path of light.")
@@ -31,7 +31,7 @@ def light_path():
     time.sleep(4)
     print("Down leads to a raging river of ice, Up leads to the peak of the mountain where something glimmers in the sun?")
 
-    choice = input("What do you do? (Down/Up): ").upper()
+    choice = input("What do you do? (Down/Up): ")
 
     if choice == "Down":
         print("You make you way down listening to the rush of water. You find a book laying upon a stump near the water.")
@@ -45,7 +45,7 @@ def light_path():
         print("Invalid choice. Please try again.")
         light_path()
 
-def dark_path():
+def Dark_path():
     """Handles the dark path in the adventure."""
 
     print("You follow the path of darkness.")
@@ -54,7 +54,7 @@ def dark_path():
     time.sleep(4)
     print("The Right path leads down the denser, darker part of the forest. The Left path leads to a thinning, lighter portion of the forest.")
 
-    choice = input("Where do you go? (Right/Left): ").upper()
+    choice = input("Where do you go? (Right/Left): ")
 
     if choice == "Right":
         print("You bravely walk down the darken path. In your thoughts you know.")
