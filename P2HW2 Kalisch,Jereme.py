@@ -22,23 +22,23 @@ modules = {module1, module2, module3, module4, module5,module6}
 
 lowest_grade = min(modules)
 
-print(f'Lowest Grade: {lowest_grade:.2f}')
+print(f'{"Lowest Grade:":<18} {lowest_grade:<25,.2f}')
 
 # Find the results for the highest grade.
 
 highest_grade = max(modules)
 
-print(f'Highest Grade: {highest_grade:.2f}')
+print(f'{"Highest Grade:":<18} {highest_grade:<25,.2f}')
 
 # Find the sum of the grades.
 
 sum_grades = sum(modules)
 
-print(f'Sum of Grades: {sum_grades:.2f}')
+print(f'{"Sum of Grades:":<18} {sum_grades:<25,.2f}')
 
 # Find the Average grade.
 
 average = sum_grades/len(modules)
 
-print(f'Average: {average:.2f}')
+print(f'{"Average:":<18} {average:<25,.2f}')
 print('----------------------------------------')
