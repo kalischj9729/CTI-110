@@ -18,7 +18,7 @@ overtime_rate = 1.5
 # After codeing, got a little fun with chatgpt for this bit of code at the beginning, enjoy :-)
 if hours_worked == 0 and pay_rate == 0:
     print("\n" + "="*50)
-    print("TERMINATION OF EMPLOYEE COMPLETE".center(50, " ").upper())
+    print(f"TERMINATION OF EMPLOYEE {name} COMPLETE".center(50, " ").upper())
     print("="*50)
 if hours_worked > regular_hours:
     overtime_hours = hours_worked - regular_hours
