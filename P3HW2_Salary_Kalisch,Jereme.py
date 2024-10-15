@@ -8,9 +8,9 @@ employee_name = input("Enter employee's name: ")
 hours_worked = float(input("Enter number of hours the employee worked this week: "))
 pay_rate = float(input("Enter employee's pay rate: $"))
 
-# 
-overtime_rate = 1.5
+# Set constant of hours worked and overtime
 regular_hours = 40
+overtime_rate = 1.5
 
 # Determine if the employee worked overtime
 if hours_worked > regular_hours:
