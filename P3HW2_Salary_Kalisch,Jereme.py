@@ -4,15 +4,22 @@
 # Creat a program to calculate employee's gross pay by way of input. 
 
 # Get the employee's name, hours worked, and pay rate
-employee_name = input("Enter employee's name: ")
+
+name = input("Enter employee's name: ")
 hours_worked = float(input("Enter number of hours the employee worked this week: "))
 pay_rate = float(input("Enter employee's pay rate: $"))
 
 # Set constant of hours worked and overtime
+
 regular_hours = 40
 overtime_rate = 1.5
 
 # Determine if the employee worked overtime
+# After codeing, got a little fun with chatgpt for this bit of code at the beginning, enjoy :-)
+if hours_worked == 0 and pay_rate == 0:
+    print("\n" + "="*50)
+    print("TERMINATION OF EMPLOYEE COMPLETE".center(50, " ").upper())
+    print("="*50)
 if hours_worked > regular_hours:
     overtime_hours = hours_worked - regular_hours
     overtime_pay = overtime_hours * pay_rate * overtime_rate
@@ -22,12 +29,15 @@ else:
     overtime_pay = 0
     regular_pay = hours_worked * pay_rate
 
+
 # Calculate gross pay
+
 gross_pay = regular_pay + overtime_pay
 
 # Display the results in a table format
+
 print("\n-----------------------------------------------")
-print(f"Employee name:\t{employee_name}")
+print(f"Employee name:\t{name}")
 print("-----------------------------------------------")
 print(f"{'Hours Worked':<15} {'Pay Rate':<10} {'Over Time':<10} {'Over Time Pay':<15} {'Regular Hour Pay':<15}    {'Gross Pay':<15}")
 print("------------------------------------------------------------------------------------------------")
