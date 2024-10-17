@@ -192,9 +192,9 @@ def light_puzzle_after_troll():
     choice = input("Solve the riddle: ").lower()
 
     if choice == "piano":
-        return True  # Puzzle solved correctly
+        return True  
     else:
-        return False  # Puzzle failed
+        return False  
 
 def mountain_puzzle_after_amulet():
     """Puzzle for the mountain path after receiving the Amulet."""
@@ -219,7 +219,7 @@ def light_final_path():
     major_event()
 
 # Handles the Dark Path
-def dark_path():
+def Dark_path():
     """Handles the dark path in the adventure."""
     print("You follow the path of darkness.")
     time.sleep(2)
@@ -235,7 +235,7 @@ def dark_path():
         light_forest_path()
     else:
         print("Invalid choice. Please try again.")
-        dark_path()
+        Dark_path()
 
 def dark_forest_path():
     """The dark forest path filled with macabre enemies and item events."""
@@ -350,6 +350,7 @@ def dark_puzzle_amulet():
     if choice == "echo":
         print("The altar glows, revealing a hidden compartment containing a mystical amulet!")
         add_to_inventory("Amulet")
+        dark_final_path()
     else:
         print("The altar remains silent, and you continue on your journey without the treasure.")
         time.sleep(2)
@@ -366,6 +367,7 @@ def dark_puzzle_dagger():
     if choice == "piano":
         print("The chest clicks open further, revealing a beautifully crafted dagger inside!")
         add_to_inventory("Dagger")
+        dark_final_path()
     else:
         print("The chest closes, and you leave without claiming the dagger.")
         time.sleep(2)
@@ -546,3 +548,5 @@ def game_over():
 
 # Start the game
 start_adventure()
+
+
