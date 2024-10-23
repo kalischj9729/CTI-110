@@ -29,10 +29,21 @@ while True:
         overtime_hours = hours_worked - REGULAR_HOURS
         overtime_pay = overtime_hours * pay_rate * OVERTIME_RATE
         regular_pay = REGULAR_HOURS * pay_rate
+        employee_count += 1
+    elif hours_worked == 0 and pay_rate == 0:
+        print("\n" + "="*50)
+        print(f"TERMINATION OF EMPLOYEE {name} COMPLETE".center(50, " ").upper())
+        print("="*50)
+
+        overtime_hours = 0
+        overtime_pay = 0
+        regular_pay = 0      
+        
     else:
         overtime_hours = 0
         overtime_pay = 0
         regular_pay = hours_worked * pay_rate
+        employee_count += 1
 
 # Calculate gross pay
     gross_pay = regular_pay + overtime_pay
@@ -41,7 +52,7 @@ while True:
     total_overtime_pay += overtime_pay
     total_regular_pay += regular_pay
     total_gross_pay += gross_pay
-    employee_count += 1
+    
 
 # Display individual results
     print("\n-----------------------------------------------")
