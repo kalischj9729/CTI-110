@@ -16,9 +16,9 @@ total_gross_pay = 0
 employee_count = 0
 
 while True:
-    name = input("Enter employee's name (or 'Done' to finish): ")
+    name = input("Enter employee's name (or 'Done' to finish): ").lower()
 
-    if name.lower() == "done":
+    if name == "done":
         break
 
     hours_worked = float(input("Enter number of hours the employee worked this week: "))
