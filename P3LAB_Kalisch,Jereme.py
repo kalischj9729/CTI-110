@@ -16,6 +16,8 @@ print(f"Change amount: ${money}")
 # Convert value into an integer.
 money = round(money*100)
 
+if money == 0:
+    print("No change")
 # Determine how many dollars are needed.
 num_dollars = money//100
 # Determine how many coins are needed.
@@ -32,6 +34,7 @@ money = money - (num_nickels*5)
 #
 num_pennies = money
 # Now to get the if/else statements for the change.
+
 if num_dollars> 0:
     if num_dollars ==1:
         print(f'${num_dollars} Dollar')
@@ -57,5 +60,4 @@ if num_pennies> 0:
         print(f'{num_pennies} Penny')
     else:
         print(f'{num_pennies} Pennies')  
-if money == 0:
-    print("No change")
+
