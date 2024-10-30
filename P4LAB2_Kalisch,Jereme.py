@@ -14,7 +14,7 @@ while run_again == "yes":
     try:
         user_input = int(input("Enter an integer: "))
 
-# Using a for loop to display the table from 1 to 12
+# Using a loop to display the table from 1 to 12
 
         if user_input >= 0:
             print(f"\nMultiplication table for {user_input}:")
@@ -29,12 +29,14 @@ while run_again == "yes":
     
 # Ask if the user wants to run the program again
 
-    run_again = input("Do you want to run the program again? (yes/no): ").lower()
+    run_again = input("Do you want to run the program again? (yes/no): ").lower().strip()
 
 # Check for valid input (either "yes" or "no")
+
     while run_again not in ["yes", "no"]:
         print("Failed to give appropriate response. Please type 'yes' or 'no'.")
-        run_again = input("Do you want to run the program again? (yes/no): ").lower()
+        run_again = input("Do you want to run the program again? (yes/no): ").lower().strip()
 
+# Loop Breaks
 
 print("Thank you for using our program....Shutting down.")
