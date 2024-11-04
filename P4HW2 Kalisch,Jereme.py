@@ -1,5 +1,5 @@
 # Jereme Kalisch
-# 10/15/2024
+# 11/04/2024
 # P4HW2
 # Create a program to calculate employee's gross pay by way of input.
 # Enter another employee's name to calculate salary for or "Done" to terminate program.
@@ -16,7 +16,7 @@ total_gross_pay = 0
 employee_count = 0
 
 while True:
-    name = input("Enter employee's name (or 'Done' to finish): ")
+    name = input("Enter employee's name (or 'Done' to finish): ").capitalize()
 
     if name.lower() == "done":
         break
@@ -26,10 +26,15 @@ while True:
 
 # Determine if the employee worked overtime
     if hours_worked > REGULAR_HOURS:
+
         overtime_hours = hours_worked - REGULAR_HOURS
+
         overtime_pay = overtime_hours * pay_rate * OVERTIME_RATE
+
         regular_pay = REGULAR_HOURS * pay_rate
+
         employee_count += 1
+
     elif hours_worked == 0 and pay_rate == 0:
         print("\n" + "="*50)
         print(f"TERMINATION OF EMPLOYEE {name} COMPLETE".center(50, " ").upper())
