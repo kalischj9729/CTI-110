@@ -10,6 +10,17 @@ scores = []
 
 num_scores = int(input("How many scores do you want to enter? "))
 
+# If nothing to enter. Advise termination of student.
+while num_scores == 0:
+        print("---" * 13)
+        print("Termination of Student may be advised!")
+        print("---" * 13)
+        hit_man = input("\n Would you like to order the hit? Y/N ").upper()
+        if hit_man == "Y":
+                print("Contract has been sent. Goodbye.")
+                exit()   
+        else:
+                num_scores = int(input("How many scores do you want to enter? "))
 # Set num_scores maximum.
 while num_scores >= 26:
         print("Total scores is less than 25. Please select appropriate number.")
