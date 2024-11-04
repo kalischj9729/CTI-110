@@ -1,5 +1,5 @@
 # Jereme Kalisch
-# 10/29/2024
+# 11/04/2024
 # P4HW1
 # Determine the letter grade for the calculated average and display it to user.
 
@@ -9,6 +9,11 @@ scores = []
 # Start the input from user of how many scores they want.
 
 num_scores = int(input("How many scores do you want to enter? "))
+
+# Set num_scores maximum.
+while num_scores >= 26:
+        print("Total scores is less than 25. Please select appropriate number.")
+        num_scores = int(input("How many scores do you want to enter? "))
 
 # Collect scores
 
