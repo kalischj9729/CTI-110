@@ -19,7 +19,11 @@ while num_scores >= 26:
 
 for i in range(1, num_scores + 1):
     while True:
-        score = float(input(f"Enter score #{i}: "))
+        score = input(f"Enter score #{i}: ")
+        while score == "":
+                print("Please input a number value that is not negative.")
+                score = (input(f"Enter score #{i}: "))
+        score = float(score)        
         if 0 <= score <= 100:
             scores.append(score)
             break
