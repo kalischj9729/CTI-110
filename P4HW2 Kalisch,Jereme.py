@@ -17,10 +17,13 @@ employee_count = 0
 
 while True:
     name = input("Enter employee's name (or 'Done' to finish): ").capitalize()
-
+    while name == "":
+         print("Please input an employee's name or DONE.")
+         name = (input("Enter employee's name (or 'Done' to finish): ")).capitalize()
     if name.lower() == "done":
         break
 
+    
     hours_worked = float(input("Enter number of hours the employee worked this week: "))
     pay_rate = float(input("Enter employee's pay rate: $"))
 
