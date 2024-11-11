@@ -41,7 +41,7 @@ def specialNum():
     
     # Check if it's the special number
     if i == 69:
-        print("You found the special number ;-)") 
+        print("You found the special number!!! ") 
         return i  # Return the special number
     else:
         print("That's not the special number. Try again!")
@@ -67,7 +67,7 @@ def main():
 
     print(getname("Kalisch"))
 
-    print(specialNum)
+    print(specialNum())
 
 # Call the main function
 if __name__ == "__main__":
