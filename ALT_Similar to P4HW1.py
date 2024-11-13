@@ -26,7 +26,7 @@ def displayItems(validItems):
     print()
     print()
     print("Here are the items you purchased!")
-    print("---" * 10)
+    print("---" * 13)
     for valid_item in validItems:
         print(valid_item)
 
